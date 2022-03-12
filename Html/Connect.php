@@ -1,4 +1,25 @@
+
+
+<pre>
+  <?php print_r($_SERVER); ?>
+</pre>
+
 <?php
+
+
+
+
+
+/*
+mysql_connect ('localhost','root','');
+mysql_select_db ('porfolio-bdd');
+
+$insert = mysql_query ("INSERT INTO message-table VALUES ("")");
+
+
+
+
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -32,3 +53,5 @@ if ($conn->query($sql) === TRUE) {
   
   $conn->close();
 ?>
+
+*/
