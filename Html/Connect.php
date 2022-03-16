@@ -18,5 +18,17 @@ try {
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
 }
+
+try {
+  $conn->exec("INSERT INTO messagetable (id, nom, prenom, mail, message) 
+  VALUES (NULL, 'coco', 'alexis', '@gmail.com', 'test')");
+
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
+
+
 ?>
+
+
 
