@@ -5,53 +5,18 @@
 </pre>
 
 <?php
-
-
-
-
-
-/*
-mysql_connect ('localhost','root','');
-mysql_select_db ('porfolio-bdd');
-
-$insert = mysql_query ("INSERT INTO message-table VALUES ("")");
-
-
-
-
-
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "firstdb";
+$dbname = "portfolio-bdd";
 
-    $nom = $_POST['Nom'];
-
-    $prenom = $_POST['Prénom'];
-
-    $message = $_POST['Message'];
-
-
-// Create connection
-$conn = new mysqli(localhost, root,'' ,firstdb);
-
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-
-$sql = "INSERT INTO firstdb (Nom, Prénom, Message)
-VALUES ($nom, $prenom, $message)":
-
-
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-  } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-  }
-  
-  $conn->close();
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo "Connected successfully";
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
 ?>
 
-*/
