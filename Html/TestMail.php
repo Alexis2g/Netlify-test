@@ -6,10 +6,6 @@
     //$message = 'hello',
     
     
-    mail('vuaille.alexis@gmail.com', 'subject', 'testttt');
+    mail('vuaille.alexis@gmail.com', 'subject', 'testttt', 'From: vuaille.alexis@gmail.com');
 
-
-
-/*
-array|string $additional_headers = [],
-    string $additional_params = ""
+    ?>
