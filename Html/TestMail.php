@@ -8,8 +8,17 @@ $headers = 'Content-Type: text/plain; charset=utf-8' . "\r\n";
     
     
     
-    mail('vuaille.alexis@gmail.com', 'subject', 'testttt', 'From: vuaille.alexis@gmail.com');
+    // mail('vuaille.alexis@gmail.com', 'subject', 'testttt', 'From: vuaille.alexis@gmail.com');
 
-    ini_set("SMTP","ssl://smtp.gmail.com");
-    ini_set("smtp_port","465");
+    $result = mail('vuaille.alexis@gmail.com', 'subject', 'testttt', 'From: vuaille.alexis@gmail.com' . "\r\n" .
+    'Reply-To: webmaster@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion());
+    if( $result ) {
+       echo 'Success';
+    }else{
+       echo 'Fail';
+    }
+
+ //   ini_set("SMTP","ssl://smtp.gmail.com");
+ //   ini_set("smtp_port","465");
     ?>
