@@ -1,0 +1,125 @@
+<html>
+    <head>  
+        <title> Toutes les Sources</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Le portfolio d'Alexis" >
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <header>
+            Les Sources Utilisées
+        </header>
+        <article>
+            <p> Voici toutes les sources que j'ai utilisées.</p>
+        </article>
+        <article class="Techno-show" >
+
+        <a onclick="ShowNestedHtml();" href="#">HTML</a>
+        
+        </article>
+        <article class="Source-link">
+        <p id="NestedLinksHtml"  style="display:none">
+            <a href="https://www.youtube.com/c/grafikart/playlists" target="_blank">
+                Grafikart    
+            </a>
+        <br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                MDN    
+            </a> 
+            <br>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                W3 Schools    
+            </a> 
+        </p>
+        
+        </article>
+
+
+
+        <article class="Techno-show" >
+
+            <a onclick="ShowNestedCss();" href="#">CSS</a>
+            
+            </article>
+            <article class="Source-link">
+            <p id="NestedLinksCss"  style="display:none">
+                <a href="https://www.youtube.com/c/grafikart/playlists" target="_blank">
+                    Grafikart    
+                </a>
+            <br>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                    MDN    
+                </a> 
+                <br>
+                <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">
+                    W3 Schools   
+                </a> 
+            </p>
+            
+            </article>
+
+
+            <article class="Techno-show" >
+
+                <a onclick="ShowNestedJS();" href="#">JS</a>
+                
+                </article>
+                <article class="Source-link">
+                <p id="NestedLinksJS"  style="display:none">
+                    <a href="https://www.youtube.com/c/grafikart/playlists" target="_blank">
+                        Grafikart    
+                    </a>
+                <br>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                        MDN    
+                    </a> 
+                    <br>
+                    <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+                        W3 Schools    
+                    </a> 
+                </p>
+                
+                </article>
+
+        <script>
+        function ShowNestedHtml()
+        {
+             var elem = document.getElementById("NestedLinksHtml");
+             var hide = elem.style.display =="none";
+             if (hide) {
+                 elem.style.display="table";
+            } 
+            else {
+               elem.style.display="none";
+            }
+        }
+
+        function ShowNestedCss()
+        {
+             var elem = document.getElementById("NestedLinksCss");
+             var hide = elem.style.display =="none";
+             if (hide) {
+                 elem.style.display="table";
+            } 
+            else {
+               elem.style.display="none";
+            }
+        }
+
+        function ShowNestedJS()
+        {
+             var elem = document.getElementById("NestedLinksJS");
+             var hide = elem.style.display =="none";
+             if (hide) {
+                 elem.style.display="table";
+            } 
+            else {
+               elem.style.display="none";
+            }
+        }
+        </script>
+
+    </body>
+    <Footer>
+        <a href="Landing.html">&#8592; Retour à l'accueil</a>
+    </Footer>
