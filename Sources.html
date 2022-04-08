@@ -20,13 +20,13 @@
         <article class="Source-link">
         <p id="NestedLinksHtml"  style="display:none">
             <a href="https://www.youtube.com/c/grafikart/playlists" target="_blank">
-                Grafikart    
+                Grafikart - Playlist "Apprendre l'HTML"    
             </a>
         <br>
             <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
                 MDN    
             </a> 
-            <br>
+        <br>
             <a href="https://www.w3schools.com/html/default.asp" target="_blank">
                 W3 Schools    
             </a> 
@@ -34,7 +34,7 @@
         
         </article>
 
-
+<br>
 
         <article class="Techno-show" >
 
@@ -44,7 +44,7 @@
             <article class="Source-link">
             <p id="NestedLinksCss"  style="display:none">
                 <a href="https://www.youtube.com/c/grafikart/playlists" target="_blank">
-                    Grafikart    
+                    Grafikart - Playlist "Découverte du CSS"    
                 </a>
             <br>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
@@ -57,7 +57,7 @@
             </p>
             
             </article>
-
+<br>
 
             <article class="Techno-show" >
 
@@ -67,7 +67,7 @@
                 <article class="Source-link">
                 <p id="NestedLinksJS"  style="display:none">
                     <a href="https://www.youtube.com/c/grafikart/playlists" target="_blank">
-                        Grafikart    
+                        Grafikart - Playlist "Apprendre le JavaScript"    
                     </a>
                 <br>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
@@ -80,6 +80,86 @@
                 </p>
                 
                 </article>
+<br>
+            
+                <article class="Techno-show" >
+
+                    <a onclick="ShowNestedPHP();" href="#">PHP</a>
+                    
+                    </article>
+                    <article class="Source-link">
+                    <p id="NestedLinksPHP"  style="display:none">
+                        <a href="https://www.youtube.com/c/grafikart/playlists" target="_blank">
+                            Grafikart - Playlist "Apprendre PHP"  
+                        </a>
+                    <br>
+                        <a href="https://www.php.net/manual/en/pdo.installation.php" target="_blank">
+                            PHP.Net Documentation : Installation et SendMail    
+                        </a> 
+                        <br>
+                        <a href="https://www.w3schools.com/php/php_mysql_connect.asp" target="_blank">
+                            W3 Schools : PHP Connect MySql DataBase   
+                        </a>
+                        <br>
+                        <a href="https://www.w3schools.com/php/php_mysql_insert.asp" target="_blank">
+                            W3 Schools : PHP MySql Insert Data  
+                        </a> 
+                    </p>
+                    
+                    </article>
+<br>
+                    <article class="Techno-show" >
+
+                        <a onclick="ShowNestedWAMP();" href="#">WAMP Serveur</a>
+                        
+                        </article>
+                        <article class="Source-link">
+                        <p id="NestedLinksWAMP"  style="display:none">
+                            <a href="https://grafikart.fr/blog/mail-local-wamp" target="_blank">
+                                Grafikart - Envoyer des mails en local avec WAMP
+                            </a>
+                        <br>
+                            <a href="https://www.youtube.com/watch?v=vUyVGdi0Fj4" target="_blank">
+                                Comment créer un Site Wordpress en local (WAMP server et localhost)    
+                            </a> 
+                        </p>
+                        
+                        </article>
+<br>
+                    <article class="Techno-show" >
+
+                         <a onclick="ShowNestedNetlify();" href="#">Netlify</a>
+                            
+                        </article>
+                        <article class="Source-link">
+                        <p id="NestedLinksNetlify"  style="display:none">
+                            <a href="https://docs.netlify.com/site-deploys/overview/" target="_blank">
+                                Netlify Doc : Deploy a website
+                            </a>
+                        <br>
+                        </p>            
+                    </article>
+<br>
+                    <article class="Techno-show" >
+
+                         <a onclick="ShowNestedNodeJS();" href="#">NodeJS</a>
+                            
+                        </article>
+                        <article class="Source-link">
+                        <p id="NestedLinksNodeJS"  style="display:none">
+                            <a href="https://www.youtube.com/c/grafikart/playlists" target="_blank">
+                                Grafikart - Playlist "Apprendre NodeJS"  
+                            </a>
+                            <br>
+                            <a href="https://nodejs.dev/learn/reading-files-with-nodejs" target="_blank">
+                                Documentation NodeJS : Comment lire des fichiers HTML    
+                            </a> 
+                        <br>
+                        </p>            
+                    </article>
+
+
+
 
         <script>
         function ShowNestedHtml()
@@ -117,6 +197,55 @@
                elem.style.display="none";
             }
         }
+
+        function ShowNestedPHP()
+        {
+             var elem = document.getElementById("NestedLinksPHP");
+             var hide = elem.style.display =="none";
+             if (hide) {
+                 elem.style.display="table";
+            } 
+            else {
+               elem.style.display="none";
+            }
+        }
+
+        function ShowNestedWAMP()
+        {
+             var elem = document.getElementById("NestedLinksWAMP");
+             var hide = elem.style.display =="none";
+             if (hide) {
+                 elem.style.display="table";
+            } 
+            else {
+               elem.style.display="none";
+            }
+        }
+        function ShowNestedNetlify()
+        {
+             var elem = document.getElementById("NestedLinksNetlify");
+             var hide = elem.style.display =="none";
+             if (hide) {
+                 elem.style.display="table";
+            } 
+            else {
+               elem.style.display="none";
+            }
+        }
+
+        function ShowNestedNodeJS()
+        {
+             var elem = document.getElementById("NestedLinksNodeJS");
+             var hide = elem.style.display =="none";
+             if (hide) {
+                 elem.style.display="table";
+            } 
+            else {
+               elem.style.display="none";
+            }
+        }
+
+
         </script>
 
     </body>
