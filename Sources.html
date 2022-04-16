@@ -158,6 +158,29 @@
                         </p>            
                     </article>
 
+<br>
+                    <article class="Techno-show" >
+
+                         <a onclick="ShowNestedScrum();" href="#">Scrum</a>
+                            
+                        </article>
+                        <article class="Source-link">
+                        <p id="NestedLinksScrum"  style="display:none">
+                            <a href="https://scrumguides.org/index.html" target="_blank">
+                                Scrum Guide 
+                            </a>
+                            <br>
+                            <a href="https://www.youtube.com/c/ScrumLife/playlists" target="_blank">
+                                Scrum Life - YouTube 
+                            </a>
+                            <br>
+                            <a href="https://www.youtube.com/c/AgileforHumans/playlists" target="_blank">
+                                Agile for Humans - Scrum 101 Playlist     
+                            </a> 
+                        <br>
+                        </p>            
+                    </article>
+
 
 
 
@@ -236,6 +259,18 @@
         function ShowNestedNodeJS()
         {
              var elem = document.getElementById("NestedLinksNodeJS");
+             var hide = elem.style.display =="none";
+             if (hide) {
+                 elem.style.display="table";
+            } 
+            else {
+               elem.style.display="none";
+            }
+        }
+
+        function ShowNestedScrum ()
+        {
+             var elem = document.getElementById("NestedLinksScrum");
              var hide = elem.style.display =="none";
              if (hide) {
                  elem.style.display="table";

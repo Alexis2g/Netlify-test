@@ -14,6 +14,16 @@ header {
     font-size: 40;
 }
 
+.index-welcome {
+    font-size: 15;
+    padding-left: 20;
+    padding-right: 20;
+}
+
+.index-div-big {
+    font-size: 30;
+
+}
 
 .img {
     padding-left: 0;
