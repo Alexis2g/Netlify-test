@@ -178,7 +178,8 @@
                             <a href="https://www.youtube.com/c/AgileforHumans/playlists" target="_blank">
                                 Agile for Humans - Scrum 101 Playlist     
                             </a> 
-                        <br>
+
+<br>
                         </p>            
                     </article>
 
@@ -192,6 +193,25 @@
                         <p id="NestedLinksTestauto"  style="display:none">
                             <a href="https://www.youtube.com/playlist?list=PLzMcBGfZo4-n40rB1XaJ0ak1bemvlqumQ" target="_blank">
                                 SELENIUM - Tech With Tim - Youtube 
+                            </a> 
+                        <br>
+                        </p>            
+                    </article>
+
+<br>
+                        </p>            
+                    </article>
+
+                    <br>
+                    <article class="Techno-show" >
+
+                         <a onclick="ShowNestedDocker();" href="#">Docker</a>
+                            
+                        </article>
+                        <article class="Source-link">
+                        <p id="NestedLinksDocker"  style="display:none">
+                            <a href="https://www.udemy.com/course/docker-docker-swarm-and-kubernetes-crash-course-for-devops/" target="_blank">
+                                UDEMY - Docker basics 
                             </a> 
                         <br>
                         </p>            
@@ -299,6 +319,18 @@
         function ShowNestedTestauto ()
         {
              var elem = document.getElementById("NestedLinksTestauto");
+             var hide = elem.style.display =="none";
+             if (hide) {
+                 elem.style.display="table";
+            } 
+            else {
+               elem.style.display="none";
+            }
+        }
+
+        function ShowNestedDocker ()
+        {
+             var elem = document.getElementById("NestedLinksDocker");
              var hide = elem.style.display =="none";
              if (hide) {
                  elem.style.display="table";
